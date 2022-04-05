@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/hhv6awd.css");
+
+@font-face {
+    font-family: 'futura';
+    src: url("assets/FuturaStdBold.woff") format('truetype');
+}
+
+$primaryColor: #0085ca;
+$secondaryColor: #666666;
+$headerTextColor: #ffffff;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 500px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    overflow: hidden;
+    
+    #header {
+        height: 135px;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        div {
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50px;
+                transform: translate(-50%,-50%);
+                width: 200px;
+                height: 70px;
+            }
+            h1 {
+                color: $headerTextColor;
+                font-size: 1.5rem;
+                text-align: center;
+                margin: 5.5rem 0 0 0;
+            }
+        }
+    }
+    #shortcuts{
+        margin: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .shortcut {
+            background-color: $secondaryColor;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: $headerTextColor;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+
+}
+
